@@ -2510,16 +2510,17 @@ input, select, textarea {
 		}
 
 		ul.actions.special {
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
+			-moz-justify-content: column;
+			-webkit-justify-content: column;
+			-ms-justify-content: column;
+			justify-content: column;
 			width: 100%;
 			margin-left: 0;
 		}
 
-			ul.actions.special li:first-child {
-				padding-left: 0;
+			ul.actions.special > li {
+				padding-left: 2em;
+				padding-right: 9em;
 			}
 
 		ul.actions.stacked {
